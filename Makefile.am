@@ -21,8 +21,8 @@
 
 bin_PROGRAMS = listres
 
-listres_CFLAGS = $(DEP_CFLAGS) -D_BSD_SOURCE
-listres_LDADD = $(DEP_LIBS)
+listres_CFLAGS = $(LISTRES_CFLAGS) -D_BSD_SOURCE
+listres_LDADD = $(LISTRES_LIBS)
 
 listres_SOURCES =	\
         listres.c
