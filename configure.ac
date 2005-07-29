@@ -22,7 +22,7 @@ dnl
 dnl Process this file with autoconf to create configure.
 
 AC_PREREQ([2.57])
-AC_INIT(listres,[7.0], [xorg@freedestkop.org],listres)
+AC_INIT(listres,[0.99.0], [https://bugs.freedesktop.org/enter_bug.cgi?product=xorg],listres)
 AM_INIT_AUTOMAKE([dist-bzip2])
 AM_MAINTAINER_MODE
 
@@ -39,5 +39,7 @@ LISTRES_CFLAGS="$DEP_CFLAGS $XAW_CFLAGS"
 LISTRES_LIBS="$DEP_LIBS $XAW_LIBS"
 AC_SUBST(LISTRES_CFLAGS)
 AC_SUBST(LISTRES_LIBS)
+
+XORG_RELEASE_VERSION
 
 AC_OUTPUT([Makefile])
