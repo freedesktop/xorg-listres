@@ -27,6 +27,6 @@ listres_LDADD = $(LISTRES_LIBS)
 listres_SOURCES =	\
         listres.c
 
-dist_man_MANS = \
+dist_man1_MANS = \
         listres.man
 
