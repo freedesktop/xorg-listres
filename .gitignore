@@ -18,3 +18,7 @@ listres.1
 missing
 stamp-h1
 *~
+*.o
+listres-*.tar.*
+ChangeLog
+tags
