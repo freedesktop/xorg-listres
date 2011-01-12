@@ -38,7 +38,6 @@ AM_CONFIG_HEADER(config.h)
 
 # Checks for pkg-config packages
 PKG_CHECK_MODULES(LISTRES, xaw7 x11 xt xmu)
-AC_SUBST(LISTRES_CFLAGS)
 AC_SUBST(LISTRES_LIBS)
 
 AC_OUTPUT([Makefile])
