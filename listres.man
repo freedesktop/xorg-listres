@@ -70,7 +70,7 @@ out the name, instance, class, and type of each resource.
 .SH "X DEFAULTS"
 To be written.
 .SH "SEE ALSO"
-X(__miscmansuffix__), xrdb(1), appropriate widget documents
+X(__miscmansuffix__), xrdb(__appmansuffix__), appropriate widget documents
 .SH "BUGS"
 On operating systems that do not support dynamic linking of run-time routines,
 this program must have all of its known widgets compiled in.  The sources
