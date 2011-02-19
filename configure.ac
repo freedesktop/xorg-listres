@@ -34,10 +34,8 @@ XORG_DEFAULT_OPTIONS
 
 AC_CONFIG_HEADERS([config.h])
 
-
-
 # Checks for pkg-config packages
-PKG_CHECK_MODULES(LISTRES, xaw7 x11 xt xmu)
+PKG_CHECK_MODULES(LISTRES, xaw7 xproto xt xmu)
 
 AC_CONFIG_FILES([
 	Makefile
