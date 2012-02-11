@@ -150,15 +150,13 @@ static void list_known_widgets (void)
     int i;
     XmuWidgetNode *wn;
     int width = 0;
-    char format[20];
 
     for (i = 0, wn = widget_list; i < nwidgets; i++, wn++) {
 	int l = strlen (wn->label);
 	if (l > width) width = l;
     }
-    sprintf (format, "%%-%ds  ", width);
     for (i = 0, wn = widget_list; i < nwidgets; i++, wn++) {
-	printf (format, wn->label);
+	printf ("%-*s  ", width, wn->label);
 	print_classname (wn, (XmuWidgetNode *) NULL, 0, False);
 	putchar ('\n');
     }
